@@ -75,7 +75,7 @@ select {
 .container {
     padding-inline: 2em;
     margin-inline: auto;
-    max-width: 80rem;
+    max-width: 60rem;
 }
 
 .sr-only {
@@ -90,15 +90,12 @@ select {
   border: 0;
 }
 
-
-
-
 .box {
     background: lightblue;
     padding: 3rem;
 }
 
 .content-center {
-    --gap: 2rem;
+    --gap: 5rem;
     justify-content: center;
 }
