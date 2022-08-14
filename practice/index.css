@@ -115,6 +115,12 @@ select {
     gap: var(--gap, 1rem);
 }
 
+/* 처음 빼고 margin-top 을 주거나, 마지막을 빼고 margin-bottom 을 주거나. 그래야 사이에만 margin이 들어가서 전체 box에 padding이나 margin 을 추가해도 위아래로 균일하게 들어간다. */
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    outline: 1px solid red;
+}
+
 .container {
     padding-inline: 2em;
     margin-inline: auto;
@@ -175,11 +181,11 @@ select {
     font-family: var(--ff-sans-cond);
     font-size: var(--fs-500);
     text-transform: uppercase;
-    letter-spacing: 4.72px;
+    letter-spacing: 4.72px; 
 }
 
 .numbered-title span {
     margin-right: .5em;
     font-weight: 700;
-    color: hsl(var(--clr-white) / .25);
+    color: hsl( var(--clr-white) / .25);
 }
